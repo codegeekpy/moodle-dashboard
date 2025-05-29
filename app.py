@@ -6,6 +6,7 @@ scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/au
 
 # Use the downloaded JSON key file here
 creds = ServiceAccountCredentials.from_json_keyfile_name("creds.json", scope)
+
 client = gspread.authorize(creds)
 
 # Open your Google Sheet by name
