@@ -5,7 +5,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
 
 # Use the downloaded JSON key file here
-creds = ServiceAccountCredentials.from_json_keyfile_name("moddle-dashboard-cb53109351c8.json", scope)
+creds = ServiceAccountCredentials.from_json_keyfile_name("creds.json", scope)
 client = gspread.authorize(creds)
 
 # Open your Google Sheet by name
