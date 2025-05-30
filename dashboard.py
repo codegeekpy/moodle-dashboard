@@ -6,11 +6,11 @@ import plotly.express as px
 
 st.title("📊Moodel Dashboard")
 
-scope=["https://spreadsheets.google.com/feeds","https://googleapis.com/auth/drive"]
+scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
 
-creds= ServiceAccountCredentials.from_json_keyfile_name("creds.json",scope)
-client=gspread.authorize(creds)
-sheet=client.open("Samplesheet").sheet1
+creds = ServiceAccountCredentials.from_json_keyfile_name("creds.json", scope)
+client = gspread.authorize(creds)
+sheet = client.open("Samplesheet").sheet1
 data=sheet.get_all_records()
 df=pd.DataFrame(data)
 
