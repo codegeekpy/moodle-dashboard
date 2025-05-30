@@ -10,7 +10,7 @@ scope=["https://spreadsheets.google.com/feeds","https://googleapis.com/auth/driv
 
 creds= ServiceAccountCredentials.from_json_keyfile_name("creds.json",scope)
 client=gspread.authorize(creds)
-sheet=client.opoen("Samplesheet").sheet1
+sheet=client.open("Samplesheet").sheet1
 data=sheet.get_all_records()
 df=pd.DataFrame(data)
 
