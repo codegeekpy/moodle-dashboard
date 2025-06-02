@@ -25,18 +25,6 @@ This project automates the collection and visualization of student engagement da
 
 ---
 
-## 📁 Folder Structure
-
-moodle-dashboard/
-│
-├── app.py # Script to update Google Sheet
-├── dashboard.py # Streamlit dashboard
-├── requirements.txt # Python dependencies
-├── creds.json # Google API credentials (DO NOT COMMIT!)
-├── .github/workflows/
-│ └── update-sheet.yml # GitHub Actions CI workflow
-└── README.md # Project documentation
-
 #Google Sheets Setup
 
 Create a new Google Cloud project.
